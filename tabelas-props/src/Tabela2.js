@@ -19,7 +19,7 @@
 
  const Corpo =() => {
     return(
-        <thead>
+        <tbody>
             <tr>
                 <td>Ana</td>
                 <td>Silva</td>
@@ -28,7 +28,7 @@
                 <td>Mário</td>
                 <td>Lopes</td>
             </tr>
-        </thead>
+        </tbody>
     )
  }
 
