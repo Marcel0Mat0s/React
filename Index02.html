@@ -1,0 +1,51 @@
+<!Doctype html>
+<html>
+	<head>
+		<meta charset="UFT-8">
+		<title>REACT - Olá Mundo</title>
+		
+		<!-- 
+			https://github.com/facebook/react/releases
+			https://babeljs.io/docs/en/
+		-->
+		<script src="https://unpkg.com/react@^18.1.0/umd/react.production.min.js"></script>
+		<script src="https://unpkg.com/react-dom@18.1.0/umd/react-dom.production.min.js"></script>
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+	</head>
+	<body>
+		<div id="root">
+			<!-- esta DIV será utilizada pelo REACT para apresentar o seu trabalho.
+				  O conteúdo desta DIV será totalmente eliminado...
+			-->
+		</div>
+		
+		<div>
+			<p style="color: red">Outro conteúdo HTML, totalmente independente do React</p>
+		</div>
+		
+		<script type="text/babel">
+			class App extends React.Component{
+				render(){
+					return <div>
+							<h1>Olá Mundo</h1>
+							<p>E já aprendi duas lições:</p>
+							<ul>
+								<li>não esquecer que quando se utiliza directamente
+								no HTML o React, precisamos de usar o <i>Babel</i>.
+								</li>
+								<li>o <i>Render</i> do React só processa um único objeto.</li>
+							</ul>
+					</div>
+								
+				}
+			}
+			
+			ReactDOM.render(
+				<App />
+				,
+				document.getElementById('root')	
+			)
+			
+		</script>
+	</body>
+</html>
